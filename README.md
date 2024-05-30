@@ -1,7 +1,7 @@
 # JavaScript Interview Questions (Code Snippets)
 
 ## Type coersion
-1. What will be the output?
+### 1. What will be the output?
 ```javascript
 console.log(1 < 2 < 3)
 console.log(3 > 2 > 1)
@@ -15,7 +15,7 @@ console.log(3 > 2 > 1) // false
 ```
 </details>
 
-2. What will be the output?
+### 2. What will be the output?
 ```javascript
 console.log(2 + 2 + '2')
 console.log('2' + 2 + 2)
