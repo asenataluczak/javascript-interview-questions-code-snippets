@@ -123,5 +123,161 @@ console.log(b) // {a: 1, b: 2}
 </details>
 
 ## let/var/const
-## Closures
+
+### 7. What will be the output?
+```javascript
+function func() {
+    let a = 'red';
+
+    if (true) {
+        let a = 'blue';
+        console.log(a);
+    }
+    console.log(a);
+}
+
+func();
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+function func() {
+    let a = 'red';
+
+    if (true) {
+        let a = 'blue';
+        console.log(a);
+    }
+    console.log(a);
+}
+
+func(); // blue red
+```
+</details>
+
+### 8. What will be the output?
+```javascript
+const age;
+let name;
+var name;
+
+console.log(age);
+console.log(name);
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+const age; // SyntaxError: Missing initializer in const declaration
+let name; 
+var name; // SyntaxError: Identifier 'name' has already been declared
+
+console.log(age);
+console.log(name);
+```
+</details>
+
+### 9. What will be the output?
+```javascript
+var x = 10;
+if(true){
+    let x = 20;
+}
+console.log(x);
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+var x = 10;
+if(true){
+    let x = 20;
+}
+console.log(x); // 10
+```
+</details>
+
+## Hoisting
+### 10. What will be the output?
+```javascript
+function foo() {
+    bar();
+    return;
+
+    function bar() {
+        console.log("bar");
+    }
+}
+
+foo();
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+function foo() {
+    bar();
+    return;
+
+    function bar() {
+        console.log("bar");
+    }
+}
+
+foo(); // "bar"
+```
+</details>
+
+### 11. What will be the output?
+```javascript
+var foo = "bar";
+function greet(){
+    console.log(foo);
+    var foo = "foo";
+}
+
+greet();
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+var foo = "bar";
+function greet(){
+    console.log(foo);
+    var foo = "foo";
+}
+
+greet(); // undefined
+```
+</details>
+
+### 12. What will be the output?
+```javascript
+function foo() {
+    a = 100;
+    var b = 200;
+}
+
+foo();
+console.log(a);    
+console.log(b);     
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+function foo() {
+    a = 100;
+    var b = 200;
+}
+
+foo();
+console.log(a); // 100
+console.log(b); // 'Error: b is not defined'
+```
+</details>
+
+
 ## Asynchronicity
