@@ -3,19 +3,31 @@
 ## Type coersion
 ### 1. What will be the output?
 ```javascript
-console.log(1 < 2 < 3)
-console.log(3 > 2 > 1)
+console.log("9" + 5)
+console.log("9" - 5)
 ```
 <details>
 <summary>Answer</summary>
 
 ```javascript
-console.log(1 < 2 < 3) // true
-console.log(3 > 2 > 1) // false
+console.log("9" + 5) // "95"
+console.log("9" - 5) // 4
 ```
 </details>
 
 ### 2. What will be the output?
+```javascript
+true+true===2
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+true+true===2 // true
+```
+</details>
+
+### 3. What will be the output?
 ```javascript
 console.log(2 + 2 + '2')
 console.log('2' + 2 + 2)
@@ -29,7 +41,47 @@ console.log('2' + 2 + 2) // '222'
 ```
 </details>
 
-### 3. What will be the output?
+### 4. What will be the output?
+```javascript
+console.log(1 + 2 * 3)
+console.log(1 + '2' * '3')
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+console.log(1 + 2 * 3) // 7
+console.log(1 + '2' * '3') // 7
+```
+</details>
+
+### 5. What will be the output?
+```javascript
+console.log(1 < 2 < 3)
+console.log(3 > 2 > 1)
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+console.log(1 < 2 < 3) // true
+console.log(3 > 2 > 1) // false
+```
+</details>
+
+### 6. What will be the output?
+```javascript
+console.log(5 + -"2" - false + "10")
+```
+<details>
+<summary>Answer</summary>
+
+```javascript
+console.log(5 + -"2" - false + "10") // 310
+```
+</details>
+
+### 7. What will be the output?
 ```javascript
 console.log(('b' + 'a' + + 'a' + 'a').toLowerCase())
 ```
@@ -42,7 +94,7 @@ console.log(('b' + 'a' + + 'a' + 'a').toLowerCase()) // 'banana'
 </details>
 
 ## Primitive vs Reference types
-### 4. What will be the output?
+### 8. What will be the output?
 ```javascript
 let obj1 = { key: 'value'};
 let obj2 = obj1;
@@ -68,7 +120,7 @@ console.log(obj1.key, obj2.key, obj3.key); // new value another value new value
 ```
 </details>
 
-### 5. What will be the output?
+### 9. What will be the output?
 ```javascript
 let a = {
     x: 1,
@@ -98,7 +150,7 @@ console.log(b); // {x: 5, y: 2}
 ```
 </details>
 
-### 6. What will be the output?
+### 10. What will be the output?
 ```javascript
 let a = {a: 1, b:2}
 let b = a
@@ -124,7 +176,7 @@ console.log(b) // {a: 1, b: 2}
 
 ## let/var/const
 
-### 7. What will be the output?
+### 11. What will be the output?
 ```javascript
 function func() {
     let a = 'red';
@@ -156,7 +208,7 @@ func(); // blue red
 ```
 </details>
 
-### 8. What will be the output?
+### 12. What will be the output?
 ```javascript
 const age;
 let name;
@@ -178,7 +230,7 @@ console.log(name);
 ```
 </details>
 
-### 9. What will be the output?
+### 13. What will be the output?
 ```javascript
 var x = 10;
 if(true){
@@ -199,7 +251,7 @@ console.log(x); // 10
 </details>
 
 ## Hoisting
-### 10. What will be the output?
+### 14. What will be the output?
 ```javascript
 function foo() {
     bar();
@@ -229,7 +281,7 @@ foo(); // "bar"
 ```
 </details>
 
-### 11. What will be the output?
+### 15. What will be the output?
 ```javascript
 var foo = "bar";
 function greet(){
@@ -253,7 +305,7 @@ greet(); // undefined
 ```
 </details>
 
-### 12. What will be the output?
+### 16. What will be the output?
 ```javascript
 function foo() {
     a = 100;
