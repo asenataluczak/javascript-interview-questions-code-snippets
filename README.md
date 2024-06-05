@@ -77,7 +77,7 @@ console.log(5 + -"2" - false + "10")
 <summary>Answer</summary>
 
 ```javascript
-310
+'310'
 ```
 </details>
 
@@ -109,7 +109,7 @@ console.log(obj1.key, obj2.key, obj3.key);
 <summary>Answer</summary>
 
 ```javascript
-new value another value new value
+'new value' 'another value' 'new value'
 ```
 </details>
 
@@ -174,7 +174,7 @@ func();
 <summary>Answer</summary>
 
 ```javascript
-blue red
+'blue' 'red'
 ```
 </details>
 
